@@ -1,0 +1,6 @@
+Answer of the puzzle:
+
+
+We can check each wire by the bulb and the battery one by one (this will be the bruteforce solution).
+
+But a better solution will be to test multiple wires at once and use the light bulb to help you figure out which ones are connected. By testing in groups, you can narrow down the pairings more quickly.

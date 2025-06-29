@@ -1,0 +1,3 @@
+x:charCount){
+        cout<<x<<" ";
+    }
