@@ -5,7 +5,8 @@ using namespace std;
 void merge(int a[], int l, int mid, int r){     //Stable    //T.C (all case) = O(n*log n)
     int b[r+1];
     int i, j, k;
-    i=l, j=mid+1, k=l;         
+    i=l, j=mid+1;
+    k=l;         
     while(i<=mid && j<=r){       // i :: l -> mid             // j :: mid+1 -> r
         if(a[i]<=a[j]){
             b[k++]=a[i++];
@@ -52,8 +53,8 @@ void display(int * A, int n){
 
 int main(){
     int arr[]={3, 6, 3, 5, 7, 9, 8};
-    int s=sizeof(arr)/sizeof(int);
-    mergeSort(arr, 0, s-1);
+    int n=sizeof(arr)/sizeof(int);
+    mergeSort(arr, 0, n-1);
     cout<<"After sorting:\n\t";
-    display(arr, s);
+    display(arr, n);
 }
