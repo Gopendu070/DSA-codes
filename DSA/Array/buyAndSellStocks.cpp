@@ -2,7 +2,6 @@
 using namespace std;
 void buySellStocks(int *arr, int n){
     int minPrice=arr[0];     //initially take the first element
-  
     int buyIndx=0, sellIndx=0;
     int maxProfit=0;
     for(int i=1; i<n; i++){

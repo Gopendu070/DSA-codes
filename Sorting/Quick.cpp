@@ -29,7 +29,7 @@ int partition(int* arr,int l,int h){
     while(start<end){
         while(arr[start]<=pivot){  start++ ; }   //move 'start'-> untill element is > pivot
 
-        while(arr[end]>pivot){  end-- ; }     //move <-'end' untill element is < pivot
+        while(arr[end]>pivot){  end-- ; }     //move <-'end' untill element is <= pivot
         
         if(start<end){  swap(arr, start, end);  }
     }

@@ -12,20 +12,20 @@ void rotateByReversing(int * arr, int n, int k){
     // 3, 2, 1, 5, 4  -------------> 4, 5, 1, 2, 3   [Answer]
 
     // reverse 0 to n-k
-    reverse(arr, arr+n-k);
+    reverse(arr, arr+k-1);
     // reverse n-k to n
-    reverse(arr+n-k, arr+n);
+    reverse(arr+k, arr+n);
    
    //Now reverse the whole arrayay
    reverse(arr, arr+n);
 }
 
 void rotatteByShifting(int *arr, int n, int k){
-    int temp;
+    
     for (int j = 1; j <= k; j++)
     {
         // backward rotation
-            temp = arr[n-1];
+          int  temp = arr[n-1];
             for (int i = n-1; i >=0; i--)
             {
                

@@ -9,7 +9,7 @@ void convert(int n)
         x= n%2;
         arr[i]=x;
         k++;
-        n/=2;
+        n/=2; 
     }
 cout<<"The converted Binary number is \n";
         for (int i=k-1; i>=0 ; i--)

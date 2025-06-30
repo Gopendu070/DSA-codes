@@ -2,10 +2,11 @@
 #include<limits.h>
 using namespace std;
 
-#define n 5
+
 int main()                
 {
-    int arr[n]={23, 30, 38, 37, 41};
+    int n=6;
+    int arr[n]={78, 730, 39, 38, 7, 41};
     int largest, sec_largest;
     largest=INT_MIN; 
 	sec_largest=INT_MIN;
@@ -16,7 +17,7 @@ int main()
 			largest=arr[i];
             
         }
-        else if (arr[i]>sec_largest && arr[i]<largest)
+        else if (arr[i]>sec_largest && arr[i] != largest)
         {
             sec_largest=arr[i];
         }
